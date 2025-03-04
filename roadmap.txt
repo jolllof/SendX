@@ -1,0 +1,23 @@
+✅ User Experience:
+
+Link Bank Account (or use a debit card).
+Enter Amount in Fiat (e.g., $200).
+Select Recipient (phone number, email, or bank details).
+App Converts & Sends via XRP in the Background (instant transaction).
+Recipient Receives in Fiat (either in their bank or SendX balance).
+✅ Backend Process (Hidden from User)
+
+User enters a dollar amount (e.g., $200).
+SendX automatically buys XRP equivalent via a liquidity provider (exchange API).
+XRP is sent to the recipient's wallet instantly (ledger confirmation).
+Once received, SendX auto-converts it to recipient's currency and deposits it into their linked bank or app balance.
+
+
+ 🛠️ Tech Stack for SendX
+Component	Technology
+Backend	Python (FastAPI/Flask), xrpl-py
+Blockchain	XRP Ledger, XRPL API
+Database	PostgreSQL/MySQL (for user data & logs)
+Frontend	React.js (Web), React Native (Mobile)
+Auth & Security	Firebase/Auth0, AES encryption for keys
+Notifications	Twilio (SMS), Firebase Push Notifications
